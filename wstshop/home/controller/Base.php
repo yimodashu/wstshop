@@ -24,7 +24,7 @@ class Base extends Controller {
     {
     	$style = WSTConf('CONF.wsthomeStyle')?WSTConf('CONF.wsthomeStyle'):'default';
     	$replace['__STYLE__'] = str_replace('/index.php','',\think\Request::instance()->root()).'/wstshop/home/view/'.WSTConf('CONF.wsthomeStyle');
-        return $this->view->fetch($style."/".$template, $vars, $replace, $config);
+        return  $this->view->fetch($style."/".$template, $vars, $replace, $config);
     }
 
 	/**

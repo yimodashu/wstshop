@@ -30,7 +30,7 @@ body{padding:0px; background:#EBF4FB;overflow:hidden;}
         <span class='logout'></span>退出系统</a> 
     </div> 
 </div>
-<div id="wst-tabs" style="width:100%; height:100%;overflow: hidden;position:absolute;top: 60px;" class="liger-tab">
+ <div id="wst-tabs" style="width:100%; height:100%;overflow: hidden;position:absolute;top: 60px;" class="liger-tab">
    {volist name="menus" id="vo" key="k"}
    <div id="wst-tab-{$vo['menuId']}" tabId="wst-tab-{$vo['menuId']}" v="{$vo['menuId']}" title="{$vo['menuName']}" class='wst-tab' {if condition="$k ==0"}lselected="true"{/if} style="height: 300px"> 
    </div>
